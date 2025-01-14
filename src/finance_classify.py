@@ -58,8 +58,8 @@ def inference(sentences: list, custom_settings: dict):
 if __name__ == '__main__':
     console = Console()
     device = 'cuda:0'
-    tokenizer = AutoTokenizer.from_pretrained(r"D:\02-weights\chatglm2-6b-int4", trust_remote_code=True)
-    model = AutoModel.from_pretrained(r"D:\02-weights\chatglm2-6b-int4", trust_remote_code=True).half().cuda()
+    tokenizer = AutoTokenizer.from_pretrained(r"D:\github-repo\fin-dynamics-ai-assessment\weights\chatglm2-6b-int4", trust_remote_code=True)
+    model = AutoModel.from_pretrained(r"D:\github-repo\fin-dynamics-ai-assessment\weights\chatglm2-6b-int4", trust_remote_code=True).half().cuda()
     model = model.eval()
     model.to(device)
     sentences = [
@@ -67,7 +67,7 @@ if __name__ == '__main__':
     ]
 
     custom_settings = init_prompts()
-    print(custom_settings)
+    # print(custom_settings)
     inference(
         sentences,
         custom_settings
