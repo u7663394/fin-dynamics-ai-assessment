@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="D:\python-environment\Anaconda3\envs\YOLOv5" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="D:\python-environment\Anaconda3\envs\YOLOv5" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="YOLOv5" project-jdk-type="Python SDK" />
 </project>
